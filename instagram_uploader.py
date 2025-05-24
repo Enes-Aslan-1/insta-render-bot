@@ -3,8 +3,8 @@ from datetime import datetime
 import os
 import pathlib
 
-USERNAME = os.environ.get("USERNAME")
-PASSWORD = os.environ.get("PASSWORD")
+USERNAME = os.getenv("IG_USERNAME")
+PASSWORD = os.getenv("IG_PASSWORD")
 SESSION_FILE = "session.json"
 VIDEO_PATH = "video.mp4"
 CAPTION = f"Günün videosu! Bugün: {datetime.now().strftime('%d.%m.%Y')} #otomasyon"
