@@ -2,7 +2,7 @@ name: Instagram Video Upload
 
 on:
   schedule:
-    - cron: '0 18 * * *'  # Her gün saat 18:00 UTC'de çalışır
+    - cron: '0 16 * * *'  # Her gün saat 18:00 UTC'de çalışır
   workflow_dispatch:       # Manuel tetikleme için
 
 jobs:
